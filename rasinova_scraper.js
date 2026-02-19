@@ -1,7 +1,6 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
 const { createObjectCsvWriter } = require("csv-writer");
-const cron = require("node-cron");
 const fs = require("fs");
 
 const URL = "https://rasinova.starez.cz/";
@@ -52,6 +51,3 @@ async function logOccupancy() {
 
 // Run once immediately
 logOccupancy();
-
-// Then run every 10 minutes
-cron.schedule("*/10 * * * *", logOccupancy);

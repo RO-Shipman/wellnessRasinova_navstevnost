@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Run scraper
-        run: node scraper.js
+        run: node rasinova_scraper.js
 
       - name: Commit updated CSV
         run: |

@@ -1,5 +1,8 @@
 name: Sauna Scraper
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "*/10 * * * *"   # every 10 minutes

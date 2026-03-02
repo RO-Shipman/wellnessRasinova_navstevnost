@@ -4,7 +4,8 @@ const { createObjectCsvWriter } = require("csv-writer");
 const fs = require("fs");
 
 const URL = "https://rasinova.starez.cz/";
-const FILE = "sauna_occupancy.csv";
+const path = require("path");
+const FILE = path.join(__dirname, "sauna_occupancy.csv";
 
 const csvWriter = createObjectCsvWriter({
   path: FILE,

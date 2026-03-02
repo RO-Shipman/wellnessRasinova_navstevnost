@@ -5,7 +5,7 @@ permissions:
 
 on:
   schedule:
-    - cron: "*/5 * * * *"   # every 5 minutes
+# cronjob used to be scheduled to run every 5 minutes
   workflow_dispatch:         # allows manual run from GitHub UI
 
 jobs:
